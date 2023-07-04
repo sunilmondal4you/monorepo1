@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "bootstrap/scss/bootstrap.scss",
+              "bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c8141ea2-bb0a-416f-9377-233a4757baa1"
   }
 }
