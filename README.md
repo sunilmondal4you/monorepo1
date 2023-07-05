@@ -1,1 +1,2 @@
-"# monorepo1" 
+#devops
+docker-compose up -d
