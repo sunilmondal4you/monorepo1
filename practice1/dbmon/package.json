@@ -1,19 +1,14 @@
 {
-  "name": "monorepo1",
+  "name": "dbmon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "myapp",
-    "node-mongo2",
-    "practice1/backend",
-    "practice1/dbmon"
-  ]
+  "license": "ISC"
 }
