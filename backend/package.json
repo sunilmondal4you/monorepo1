@@ -1,18 +1,12 @@
 {
-  "name": "monorepo1",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "myapp",
-    "node-mongo2",
-    "backend"
-  ]
+  "license": "ISC"
 }

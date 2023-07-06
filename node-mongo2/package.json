@@ -1,5 +1,5 @@
 {
-  "name": "monorepo1",
+  "name": "mongo2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "myapp",
-    "node-mongo2",
-    "backend"
-  ]
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0"
+  }
 }
