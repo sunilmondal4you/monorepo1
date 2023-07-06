@@ -23,3 +23,20 @@ export const readAll = async (req, res) => {
 
   res.json(userList);
 };
+
+export const insertOneColl = async (req, res) => {
+  const client = new MongoClient(uri);
+  const userCollection = client.db("practice").collection("users");
+
+  let newDocument = {
+    _id: 4,
+    name: "Santosh Kumar",
+    address: "Kharghar",
+    mobile: 8779529715,
+  };
+  const response = await userCollection.insertOne(newDocument);
+
+  client.close();
+
+  res.json({ success: true });
+};
