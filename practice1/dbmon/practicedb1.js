@@ -29,7 +29,6 @@ export const insertOneColl = async (req, res) => {
   const userCollection = client.db("practice").collection("users");
 
   let newDocument = {
-    _id: 4,
     name: "Santosh Kumar",
     address: "Kharghar",
     mobile: 8779529715,
@@ -39,4 +38,20 @@ export const insertOneColl = async (req, res) => {
   client.close();
 
   res.json({ success: true });
+};
+
+export const createUser = async (req, res) => {
+  try {
+    const client = new MongoClient(uri);
+    const userCollection = client.db("practice").collection("users");
+
+    const reqBody = req.body;
+    const response = await userCollection.insertOne(reqBody);
+
+    client.close();
+
+    res.json({ success: true });
+  } catch {
+    res.json({ success: false });
+  }
 };
