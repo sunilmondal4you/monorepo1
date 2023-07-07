@@ -1,5 +1,5 @@
 {
-  "name": "monorepo1",
+  "name": "dbmodule2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "myapp",
-    "node-mongo2",
-    "practice1/backend",
-    "practice1/dbmon",
-    "practice2/backend2",
-    "practice2/dbmodule2"
-  ]
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
 }
