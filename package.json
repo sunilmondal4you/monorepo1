@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "myapp",
     "node-mongo2",
     "practice1/backend",
     "practice1/dbmon",
